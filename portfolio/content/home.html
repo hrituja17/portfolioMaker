@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hrituja Sen">
+    <meta name="description" content="Make your portfolio">
+    <meta name="keywords" content="portfolio, make, create, resume, cv, profile">
+    <script src="https://kit.fontawesome.com/a24d97662a.js" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+    <link href="../styles/style.css" rel="stylesheet">
+
+    <title>Portfolio Maker | Form</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info p-3">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">MakeYourResumé</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ml-auto mt-15 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="home.html">About Us</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="main">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="welcome">Welcome</h1>
+                <h2>Start building your portfolio, right here</h2>
+            </div>
+            <hr class="styledhr">
+            <div class="container">
+                <div class="formbox">
+                    <form action="view.php" method="POST" enctype="multipart/form-data">
+                        <div class="text-left innerheading">
+                            <h2><i class="fas fa-user"></i> ABOUT YOURSELF</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="name">Name <i class="fas fa-italic"></i></label>
+                                    <input type="text" name="name" class="form-control" placeholder="Enter name..">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="name">Tagline <i class="fas fa-flushed"></i></label>
+                                    <input type="text" name="tagline" class="form-control" placeholder="A small tagline about yourself..">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="text-center">
+                                    <h4>Choose a clear picture of yourself <i class="fas fa-upload"></i></h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group">
+                                    <input type="file" name="profile" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="styledhr">
+                        <div class="text-left innerheading">
+                            <h2><i class="fas fa-book"></i> EDUCATION</h2>
+                        </div>
+                        <div id="education">
+                            <hr>
+                            <div class="row" id="edurow">
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Qualification <i class="fas fa-hat-cowboy"></i></label>
+                                        <input type="text" name="qualification" class="form-control" placeholder="Enter qualification..">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Place of Study <i class="fas fa-location-arrow"></i></label>
+                                        <input type="text" name="place" class="form-control" placeholder="Enter the place of study..">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <button type="button" id="addEducation" class="btn btn-info btn-circle btn-md"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <hr class="styledhr">
+                        <div class="text-left innerheading">
+                            <h2><i class="fas fa-book"></i> LANGUAGES</h2>
+                        </div>
+                        <div id="languages">
+                            <hr>
+                            <div class="row" id="edurow">
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Language <i class="fas fa-language"></i></label>
+                                        <input type="text" name="language" class="form-control" placeholder="Language..">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Proficiency <i class="fas fa-universal-access"></i></label>
+                                        <div class="formboxshadow">
+                                            <select name="proficiency" id="proficiency" class="form-control">
+                                                <option value="elementary">Elementary Proficiency</option>
+                                                <option value="limited">Limited Working Proficiency</option>
+                                                <option value="professional">Full Professional Proficiency</option>
+                                                <option value="native">Native or Bilingual Proficiency</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <button type="button" id="addLanguage" class="btn btn-info btn-circle btn-md"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <hr class="styledhr">
+                        <div class="text-left innerheading">
+                            <h2><i class="fas fa-screwdriver"></i> SKILLS</h2>
+                        </div>
+                        <div id="technology">
+                            <hr>
+                            <div class="row" id="techrow">
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Technology <i class="fas fa-tools"></i></label>
+                                        <input type="text" name="technology" class="form-control" placeholder="Enter technology name..">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Expertise Level <i class="fas fa-sort"></i></label>
+                                        <div class="formboxshadow">
+                                            <select name="expertise" id="expertise" class="form-control">
+                                                <option value="beginner">Beginner</option>
+                                                <option value="intermediate">Intermediate</option>
+                                                <option value="advanced">Advanced</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <button type="button" id="addTechnology" class="btn btn-info btn-circle btn-md"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <hr class="styledhr">
+                        <div class="text-left innerheading">
+                            <h2><i class="fas fa-project-diagram"></i> PROJECTS</h2>
+                        </div>
+                        <div id="projects">
+                            <hr>
+                            <div class="row" id="projectsrow">
+                                <div class="col-sm-12 col-md-3">
+                                    <div class="form-group">
+                                        <label for="name">Name <i class="fab fa-readme"></i></label>
+                                        <input type="text" name="pname" class="form-control" placeholder="Enter project name..">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-5">
+                                    <div class="form-group">
+                                        <label for="name">Description <i class="fas fa-pen"></i></label>
+                                        <input type="text" name="pdescription" class="form-control" placeholder="A short description about the project..">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="form-group">
+                                        <label for="name">Link <i class="fas fa-external-link-alt"></i></label>
+                                        <input type="text" name="plink" class="form-control" placeholder="Working link for the project..">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <button type="button" id="addProject" class="btn btn-info btn-circle btn-md"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <hr class="styledhr">
+                        <div class="text-left innerheading">
+                            <h2><i class="fas fa-certificate"></i> CERTIFICATIONS</h2>
+                        </div>
+                        <div id="certificates">
+                            <hr>
+                            <div class="row" id="certificatesrow">
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Name <i class="fab fa-readme"></i></label>
+                                        <input type="text" name="cname" class="form-control" placeholder="Enter certification name..">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Link <i class="fas fa-external-link-alt"></i></label>
+                                        <input type="text" name="clink" class="form-control" placeholder="Verification link..">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <button type="button" id="addCertificate" class="btn btn-info btn-circle btn-md"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <hr class="styledhr">
+                        <div class="text-left innerheading">
+                            <h2><i class="fas fa-laptop"></i> WORK EXPERIENCE</h2>
+                        </div>
+                        <div id="workexp">
+                            <hr>
+                            <div class="row" id="workrow">
+                                <div class="col-sm-12 col-md-3">
+                                    <div class="form-group">
+                                        <label for="name">Post <i class="fas fa-user"></i></label>
+                                        <input type="text" name="wpost" class="form-control" placeholder="Worked As?">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="form-group">
+                                        <label for="name">Organization <i class="fas fa-map-pin"></i></label>
+                                        <input type="text" name="worg" class="form-control" placeholder="Name of the Organization..">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-5">
+                                    <div class="form-group">
+                                        <label for="name">Description <i class="fas fa-clipboard-check"></i></label>
+                                        <input type="text" name="wdesc" class="form-control" placeholder="Description of work done..">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <button type="button" id="addWork" class="btn btn-info btn-circle btn-md"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <hr class="styledhr">
+                        <div class="text-left innerheading">
+                            <h2><i class="fas fa-icons"></i> SOCIAL PLATFORMS</h2>
+                        </div>
+                        <div id="social">
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3 col-md-4">
+                                    <div class="text-center">
+                                       <h1><i class="fas fa-envelope"></i></h1>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9 col-md-8">
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" placeholder="Email ID..">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3 col-md-4">
+                                    <div class="text-center">
+                                       <h1><i class="fa fa-facebook"></i></h1>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9 col-md-8">
+                                    <div class="form-group">
+                                        <input type="text" name="facebook" class="form-control" placeholder="Facebook ID..">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3 col-md-4">
+                                    <div class="text-center">
+                                       <h1><i class="fa fa-instagram"></i></h1>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9 col-md-8">
+                                    <div class="form-group">
+                                        <input type="text" name="instagram" class="form-control" placeholder="Instagram ID..">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3 col-md-4">
+                                    <div class="text-center">
+                                       <h1><i class="fa fa-linkedin"></i></h1>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9 col-md-8">
+                                    <div class="form-group">
+                                        <input type="text" name="linkedin" class="form-control" placeholder="LinkedIn ID..">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3 col-md-4">
+                                    <div class="text-center">
+                                       <h1><i class="fa fa-github"></i></h1>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9 col-md-8">
+                                    <div class="form-group">
+                                        <input type="text" name="github" class="form-control" placeholder="GitHub ID..">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3 col-md-4">
+                                    <div class="text-center">
+                                       <h1><i class="fa fa-stack-overflow"></i></h1>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9 col-md-8">
+                                    <div class="form-group">
+                                        <input type="text" name="stackoverflow" class="form-control" placeholder="StackOverflow ID..">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3 col-md-4">
+                                    <div class="text-center">
+                                       <h1><i class="fab fa-chrome"></i></h1>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9 col-md-8">
+                                    <div class="form-group">
+                                        <input type="text" name="website" class="form-control" placeholder="Website link..">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3 col-md-4">
+                                    <div class="text-center">
+                                       <h1><i class="fa fa-medium"></i></h1>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9 col-md-8">
+                                    <div class="form-group">
+                                        <input type="text" name="medium" class="form-control" placeholder="Medium ID..">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="styledhr">
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success btn-lg" name="generate">Generate Portfolio</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/core.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

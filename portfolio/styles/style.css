@@ -1,0 +1,110 @@
+body{
+    font-family: 'Oxygen', sans-serif;
+    overflow-x: hidden;
+}
+
+nav{
+    box-shadow: 0 3px 10px -3px black;
+}
+
+#main{
+    margin: 10vh 0; 
+}
+
+hr.styledhr{
+    background-color: black;
+}
+
+.welcome{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.formbox{
+    padding: 20px 40px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 1px #1164a8;
+    min-height: 70vh;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+.form-group{
+    text-align: center;
+}
+
+.form-group label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.innerheading{
+    font-weight: bold;
+}
+
+.form-group input{
+    box-shadow: 0 0 4px 1px #f3c39c;
+}
+
+.formboxshadow{
+    box-shadow: 0 0 4px 1px #f3c39c;
+    border-radius: 5px;
+}
+
+.btn-circle.btn-md { 
+    box-shadow: 0 5px 15px -7px black;
+    width: 50px; 
+    height: 50px; 
+    padding: 12px 10px; 
+    border-radius: 25px; 
+    font-size: 20px; 
+    text-align: center; 
+}
+
+.btn-circle.btn-md:hover{
+    box-shadow: none;
+}
+
+
+
+.pfbox{
+    padding: 30px;
+}
+
+.topbox{
+    background-color: #20eb74;
+    padding: 15px 30px;
+    min-height: 20vh;
+    position: relative;
+}
+
+.bottombox{
+    background-color: #fcfcfc;
+    min-height: 110vh;
+    padding: 100px 30px 20px 30px;
+}
+
+.roundedimage{
+    position: absolute;
+    top: 48%;
+    right: 10%;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    border: 3px solid #fcfcfc;
+}
+
+
+@media only screen and(max-width: 800px){
+    .tagline{
+        font-size: 17px;
+    }
+
+    .link{
+        font-size: 12px;
+    }
+
+    .roundedimage{
+        top: 70%;
+        right: 20%;
+    }
+}
